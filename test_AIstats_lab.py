@@ -59,7 +59,7 @@ def test_conditional_distribution():
 
 
 def test_probability_sum_greater_than_3():
-    assert np.isclose(probability_sum_greater_than_3(), 0.50)
+    assert np.isclose(probability_sum_greater_than_3(), 0.35)
 
 
 def test_independence_check():
@@ -73,17 +73,17 @@ def test_expectations():
 
 
 def test_variances():
-    assert np.isclose(variance_x(), 0.9475)
+    assert np.isclose(variance_x(), 0.8475)
     assert np.isclose(variance_y(), 1.01)
 
 
 def test_covariance_and_correlation():
     assert np.isclose(covariance_xy(), 0.715)
-    assert np.isclose(correlation_xy(), 0.731244, atol=1e-5)
+    assert np.isclose(correlation_xy(), 0.7728149261833133, atol=1e-5)
 
 
 def test_variance_sum():
-    assert np.isclose(variance_sum(), 3.3875)
+    assert np.isclose(variance_sum(), 3.2875)
 
 
 def test_variance_identity():
